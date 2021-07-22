@@ -1,1 +1,1 @@
-# gatsbay_test_task_thrive
+# gatsby_test_task_thrive
