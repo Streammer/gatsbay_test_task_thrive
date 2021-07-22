@@ -6,18 +6,30 @@
  */
 
 import * as React from 'react'
+import {useEffect, useState} from 'react'
 import HelloWorld from './HelloWorld/HelloWorld'
 import Video from './Video/Video'
+import {getRequest} from '../services/requests'
 import './layout.css'
 
+const greeting = 'Hello World'
+
 const Layout = () => {
-    const videoTitle = 'YouTube video player'
-    const greeting = 'Hello World'
-    const videoSrcURL = 'https://www.youtube.com/embed/kr4g2h5YmnU'
+    const [videos, SetVideos] = useState([])
+
+    useEffect(() => {
+        getRequest()
+            .then((response) => SetVideos(response))
+    }, []);
+
     return (
         <>
             <HelloWorld greeting={greeting}/>
-            <Video videoSrcURL={videoSrcURL} videoTitle={videoTitle}/>
+            {
+                videos.map(it => (
+                    <Video key={it.id} videoSrcURL={it.url} videoTitle={it.title}/>
+                ))
+            }
         </>
     )
 }
