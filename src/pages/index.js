@@ -1,13 +1,11 @@
 import * as React from "react"
-
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import HelloWorld from "../components/HelloWorld";
+import HelloWorld from "../components/HelloWorld/HelloWorld";
+import KittenVideo from "../components/KittenVideo/KittenVideo";
 
 const IndexPage = () => (
     <>
-        <Layout/>
         <HelloWorld/>
+        <KittenVideo/>
     </>
 
 )
