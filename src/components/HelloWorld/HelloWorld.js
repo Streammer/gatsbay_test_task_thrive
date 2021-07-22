@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {greeting, linkToGoogle} from '../../constants/statikData'
+import {linkToGoogle} from '../../constants/statikData'
 import './style.scss'
 
 const HelloWorld = ({greeting}) => (
