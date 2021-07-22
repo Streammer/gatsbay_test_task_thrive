@@ -1,4 +1,5 @@
 1. Be sure that you have installed json-server
+2. Checkout to the master branch
 2. launch the project with command  'gatsby develop'
 3. Launch json server with command 'json-server --watch src/__mock__/data.json --port 4000'
 4. This application displays greeting message and shows video from YouTube
