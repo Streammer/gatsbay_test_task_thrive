@@ -10,9 +10,9 @@ import {useEffect, useState} from 'react'
 import HelloWorld from './HelloWorld/HelloWorld'
 import Video from './Video/Video'
 import {getRequest} from '../services/requests'
+import {greeting} from '../constants/statikData'
 import './layout.css'
 
-const greeting = 'Hello World'
 
 const Layout = () => {
     const [videos, SetVideos] = useState([])
