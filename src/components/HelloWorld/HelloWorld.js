@@ -1,21 +1,17 @@
-import * as React from "react"
-import './styles.scss'
-const HelloWorld = () => {
+import * as React from 'react'
+import {linkToGoogle} from '../../constants/statikUrls'
+import './style.scss'
+
+const HelloWorld = ({greeting}) => {
     return (
         <a className='hello-world'
-            href='https://www.google.com'
+            href={linkToGoogle}
             target='_blank'
             rel='noreferrer'
-            style={{textDecoration: 'none'}}
         >
-            <h1 className='hello-world__capture'
-                style={{
-                    color: 'red',
-                    textAlign: 'center'
-                }}
-            >Hello World</h1>
+            <h1 className='hello-world__capture'>{greeting}</h1>
         </a>
-    );
-};
+    )
+}
 
-export default HelloWorld;
+export default HelloWorld

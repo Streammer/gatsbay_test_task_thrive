@@ -1,13 +1,6 @@
 import * as React from "react"
-import HelloWorld from "../components/HelloWorld/HelloWorld";
-import KittenVideo from "../components/KittenVideo/KittenVideo";
+import Layout from "../components/layout"
 
-const IndexPage = () => (
-    <>
-        <HelloWorld/>
-        <KittenVideo/>
-    </>
-
-)
+const IndexPage = () => <Layout/>
 
 export default IndexPage
